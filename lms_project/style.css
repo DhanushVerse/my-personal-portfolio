@@ -1,0 +1,136 @@
+/* 1. Global Reset & Font Setup */
+body {
+    font-family: 'Poppins', sans-serif; /* Google Font-a use pannunga */
+    color: #333; /* Darker text color */
+    background-color: #f4f7f9; /* Soft background color */
+    margin: 0;
+    line-height: 1.6; /* Lines-kku naduvula nalla space kudunga */
+}
+
+/* 2. Container/Layout */
+.project-container {
+    max-width: 1000px; /* Page-a center-la konjam compact-a veinga */
+    margin: 0 auto; /* Center panna */
+    padding: 20px;
+}
+
+/* 3. Header and Back Link */
+.page-header {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+.back-link {
+    text-decoration: none;
+    color: #007bff; /* Konjam vibrant blue use pannunga */
+    font-weight: 600;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* 4. Title Section Styling */
+.project-title-section {
+    text-align: center;
+    padding: 40px 0 20px;
+}
+.project-title-section h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+.tagline {
+    font-size: 1.1em;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+/* 5. Buttons (Most Important for Action!) */
+.action-links {
+    display: flex; /* Buttons-a side-by-side veikka */
+    justify-content: center;
+    gap: 15px; /* Buttons-kku naduvula space */
+}
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+.primary-btn {
+    background-color: #007bff; /* Main color */
+    color: white;
+    border: 2px solid #007bff;
+}
+.primary-btn:hover {
+    background-color: #0056b3;
+}
+.secondary-btn {
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+.secondary-btn:hover {
+    background-color: #e6f0ff;
+}
+
+/* 6. Visual Showcase */
+.visual-showcase {
+    padding: 20px 0;
+}
+.screenshot-wrapper img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slight shadow for a professional look */
+}
+
+/* 7. Grid Layout for Details */
+.grid-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+.detail-card {
+    flex: 1; /* Rendu cards-um same size-a irukkanum */
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.detail-card h3 {
+    color: #3498db; /* Highlight color for headings */
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+.tech-list, .feature-list {
+    list-style-type: none; /* Default dots-a remove pannunga */
+    padding: 0;
+}
+.tech-list li, .feature-list li {
+    padding: 5px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px dashed #eee;
+}
+
+/* 8. Deep Dive Section */
+.deep-dive-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+/* 9. Responsiveness (Mobile-kku) */
+@media (max-width: 768px) {
+    .grid-layout {
+        flex-direction: column; /* Mobile-la rendu card-um onnukku keezha onna varanum */
+    }
+    .project-title-section h1 {
+        font-size: 2em;
+    }
+    .action-links {
+        flex-direction: column; /* Buttons-um onnukku keezha onna varanum */
+    }
+}
